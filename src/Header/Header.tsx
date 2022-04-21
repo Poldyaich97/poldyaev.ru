@@ -7,24 +7,24 @@ export default function Header() {
     <header className={styles.header}>
       <nav className={styles.navigation}>
         <li className={styles.button}>
-          <a href="#" className={styles.link}>
+          <a href="https://github.com/Poldyaich97" className={styles.link}>
             Работы
           </a>
         </li>
         <li className={styles.button}>
-          <a href="#" className={styles.link}>
+          <a href="https://career.habr.com/poldyaich97" className={styles.link}>
             Резюме
           </a>
         </li>
         <li className={styles.button}>
-          <a href="#" className={styles.link}>
+          <a href="#contacts" className={styles.link}>
             Контакты
           </a>
         </li>
         <hr className={styles.line} />
         <li className={styles.button}>
           <a href="mailto:daniil@poldyaev.ru" className={styles.link}>
-            Работы
+            daniil@poldyaev.ru
           </a>
         </li>
         <li className={styles.button}>
@@ -52,6 +52,7 @@ export default function Header() {
           </a>
         </div>
       </div>
+      <a href="https://vk.me/poldyaevru" className={styles.circleLink}></a>
     </header>
   );
 }

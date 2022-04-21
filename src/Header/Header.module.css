@@ -125,3 +125,45 @@
   color: #ffffff;
   padding: 10px 0;
 }
+
+.circleLink {
+  display: block;
+  width: 150px;
+  height: 150px;
+  top: 520px;
+  right: 30px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  background: #255af6;
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  z-index: 2;
+}
+
+.circleLink::after {
+  position: absolute;
+  content: "написать мне";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.circleLink::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #1c1d20;
+  top: -100%;
+  left: 0;
+  transition: top 0.9s;
+}
+.circleLink:hover::before {
+  top: 0;
+}

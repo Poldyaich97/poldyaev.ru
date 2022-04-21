@@ -10,7 +10,7 @@ export default function Footer() {
         продукты вместе
       </h2>
 
-      <div className={styles.contacts}>
+      <div id="contacts" className={styles.contacts}>
         <a
           href="daniil@poldyaev.ru&body=Привет, хочу предложить тебе работу."
           className={styles.button}
@@ -41,10 +41,10 @@ export default function Footer() {
             <p className={styles.blockTitle}>контакты</p>
             <div className={styles.social}>
               <p className={[styles.blockSubTitle, styles.telegram].join(" ")}>
-                <a href="#">telegram</a>{" "}
+                <a href="https://telegram.me/PoldyaevD">telegram</a>{" "}
               </p>
               <p className={[styles.blockSubTitle, styles.github].join(" ")}>
-                <a href="#">github</a>{" "}
+                <a href="https://github.com/Poldyaich97">github</a>{" "}
               </p>
             </div>
           </div>
