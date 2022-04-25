@@ -1,61 +1,58 @@
 .footer {
-  background: #1e1e1e;
-  height: 640px;
   padding: 90px 0px 20px 0px;
-  z-index: 0;
+  background: #1e1e1e;
   position: relative;
+  box-sizing: border-box;
+  min-height: 640px;
+  overflow: hidden;
+}
+.footer__slider {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  z-index: 0;
+}
+
+.footer__content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 1;
 }
 .title {
-  margin-top: 0px;
-  margin-left: 150px;
-  font-size: 60px;
+  font-size: 72px;
   line-height: 120%;
-  z-index: 4;
-  position: absolute;
+  margin: 0px 0px 80px 0px;
 }
 
 .contacts {
-  margin: 320px 0px 0px 150px;
   display: flex;
   column-gap: 10px;
-  z-index: 2;
-  position: absolute;
+  margin-bottom: 180px;
 }
 
 .button {
-  width: 250px;
-  height: 47px;
   border-radius: 100px;
-
   background: #1e1e1e;
-  border: 1px solid white;
-  padding: 12px 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  padding: 10px 42px;
   font-weight: 300;
   font-size: 18px;
   line-height: 130%;
   border: 0.2px solid #ffffff;
-
-  text-decoration: none;
-  color: #ffffff;
-}
-.slider {
-  position: absolute;
-  top: 320px;
 }
 
 .line {
-  margin-top: 540px;
+  width: 100%;
   border: 1px solid #ffffff;
   margin-bottom: 30px;
 }
-
 .infoWrapper {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .info {
   display: flex;
@@ -82,7 +79,7 @@
 }
 .social {
   display: flex;
-  column-gap: 58px;
+  column-gap: 40px;
 }
 .github {
   position: relative;
@@ -102,4 +99,14 @@
   content: url("./telegram.svg");
   position: absolute;
   left: -20px;
+  top: 2px;
+}
+
+.goOver {
+  display: flex;
+  align-items: center;
+}
+
+.goOver__title {
+  margin-left: 6px;
 }
