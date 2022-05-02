@@ -1,8 +1,35 @@
+import React, { useState, useEffect } from "react";
 import styles from "./Footer.module.css";
 import Slider from "../Slider/Slider";
 import container from "../Container/Container.module.css";
 
+function Clock() {
+  const data = new Date();
+  let hours = data.getHours().toString();
+  let minutes = data.getMinutes().toString();
+
+  if (hours.length < 2) hours = "0" + hours;
+  if (minutes.length < 2) minutes = "0" + minutes;
+
+  return hours + ":" + minutes;
+}
+
+function Year() {
+  const data = new Date();
+  return data.getFullYear().toString();
+}
+
 export default function Footer() {
+  let [times, setTimes] = useState(Clock());
+  let [year, setYear] = useState(Year());
+
+  useEffect(() => {
+    window.setInterval(function () {
+      setTimes(Clock());
+      setYear(Year());
+    });
+  });
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__slider}>
@@ -31,11 +58,11 @@ export default function Footer() {
             <div className={styles.info}>
               <div className={styles.block}>
                 <p className={styles.blockTitle}>версия</p>
-                <p className={styles.blockSubTitle}>2022 </p>
+                <p className={styles.blockSubTitle}>{year}</p>
               </div>
               <div className={styles.block}>
                 <p className={styles.blockTitle}>местное время</p>
-                <p className={styles.blockSubTitle}>10:24 GMT +2 </p>
+                <p className={styles.blockSubTitle}>{times}</p>
               </div>
             </div>
             <div className={styles.block}>

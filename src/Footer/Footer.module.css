@@ -81,26 +81,6 @@
   display: flex;
   column-gap: 40px;
 }
-.github {
-  position: relative;
-}
-
-.github::before {
-  content: url("./github.svg");
-  position: absolute;
-  left: -20px;
-  top: 2px;
-}
-
-.telegram {
-  position: relative;
-}
-.telegram::before {
-  content: url("./telegram.svg");
-  position: absolute;
-  left: -20px;
-  top: 2px;
-}
 
 .goOver {
   display: flex;
