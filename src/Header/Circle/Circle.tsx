@@ -2,7 +2,7 @@ import styles from "./Circle.module.css";
 
 export default function Circle() {
   return (
-    <a href="#" className={styles.circle}>
+    <a href="/#" className={styles.circle}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="36"

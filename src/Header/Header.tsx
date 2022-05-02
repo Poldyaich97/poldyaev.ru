@@ -13,17 +13,17 @@ export default function Header() {
         <div className={styles.header__content}>
           <nav className={styles.navigation}>
             <li>
-              <a href="#" className={styles.link}>
+              <a href="#portfolio" className={styles.link}>
                 Работы
               </a>
             </li>
             <li>
-              <a href="#" className={styles.link}>
+              <a href="#portfolio" className={styles.link}>
                 Резюме
               </a>
             </li>
             <li>
-              <a href="#" className={styles.link}>
+              <a href="#portfolio" className={styles.link}>
                 Контакты
               </a>
             </li>
@@ -51,7 +51,7 @@ export default function Header() {
               Люблю решать сложные задачи и узнавать <br /> новое.
               Учусь создавать web приложения <br /> с помощью React и экосистемы
             </p>
-            <a className={styles.lookBelow} href="#">
+            <a className={styles.lookBelow} href="/#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"

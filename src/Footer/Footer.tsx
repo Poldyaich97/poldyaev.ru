@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Footer.module.css";
 import Slider from "../Slider/Slider";
 import container from "../Container/Container.module.css";
@@ -69,7 +69,7 @@ export default function Footer() {
               <p className={styles.blockTitle}>контакты</p>
               {
                 <div className={styles.social}>
-                  <a className={styles.goOver} href="#">
+                  <a className={styles.goOver} href="https://t.me/PoldyaevD">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="12"
@@ -82,9 +82,12 @@ export default function Footer() {
                         strokeWidth=".55"
                       />
                     </svg>
-                    <span className={styles.goOver__title}>дальше</span>
+                    <span className={styles.goOver__title}>telegram</span>
                   </a>
-                  <a className={styles.goOver} href="#">
+                  <a
+                    className={styles.goOver}
+                    href="https://github.com/Poldyaich97"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="12"
