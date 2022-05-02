@@ -9,10 +9,10 @@ export default function Portfolio() {
             <div className={styles.img}></div>
           </div>
           <div className={styles.card}>
-            <div className={styles.img}></div>
+            <div className={styles.img2}></div>
           </div>
           <div className={styles.card}>
-            <div className={styles.img}></div>
+            <div className={styles.img3}></div>
           </div>
         </div>
       </div>
@@ -22,10 +22,10 @@ export default function Portfolio() {
             <div className={styles.img}></div>
           </div>
           <div className={styles.card}>
-            <div className={styles.img}></div>
+            <div className={styles.img2}></div>
           </div>
           <div className={styles.card}>
-            <div className={styles.img}></div>
+            <div className={styles.img3}></div>
           </div>
         </div>
       </div>
