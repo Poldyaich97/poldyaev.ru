@@ -9,11 +9,11 @@ export default function Circle() {
         height="37"
         fill="none"
       >
-        <g clip-path="url(#a)">
+        <g clipPath="url(#a)">
           <path
             fill="#255AF6"
             stroke="#1E1E1E"
-            stroke-width="1.06"
+            strokeWidth="1.06"
             d="M26.66 23.46V6.33h3.36V30.5H5.86v-3.36h18.4l-.9-.9L4.5 7.38l2.4-2.4 18.86 18.85.9.9v-1.27Z"
           />
         </g>

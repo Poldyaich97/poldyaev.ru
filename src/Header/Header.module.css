@@ -76,6 +76,9 @@ li:hover {
 .lookBelow__title {
   margin-left: 12px;
 }
+.lookBelow:hover {
+  animation: down 1s;
+}
 
 @keyframes bounce {
   0%,
@@ -87,5 +90,18 @@ li:hover {
   70% {
     transform: translateY(-15px);
     transform: translateY(-15px);
+  }
+}
+
+@keyframes down {
+  0%,
+  20%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(15px);
+    transform: translateY(15px);
   }
 }
