@@ -21,11 +21,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
+  line-height: 130%;
+  font-size: 14px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "NeueMachina";
+  font-weight: 400;
 }
 
 a {

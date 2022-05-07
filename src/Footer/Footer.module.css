@@ -3,28 +3,25 @@
   background: #1e1e1e;
   position: relative;
   box-sizing: border-box;
-  min-height: 640px;
+  height: 640px;
   overflow: hidden;
 }
 .footer__slider {
   position: absolute;
-  top: 75px;
   left: 0;
   z-index: 0;
+  margin-top: 160px;
 }
 
 .footer__content {
   position: relative;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   z-index: 1;
 }
 .title {
-  font-size: 72px;
-  line-height: 120%;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
   margin: 0px 0px 80px 0px;
 }
 
@@ -46,7 +43,8 @@
 
 .line {
   width: 100%;
-  border: 1px solid #ffffff;
+  height: 1px;
+  background: #ffffff;
   margin-bottom: 30px;
 }
 .infoWrapper {
@@ -54,39 +52,37 @@
   justify-content: space-between;
   width: 100%;
 }
-.info {
+.timeZone {
   display: flex;
   column-gap: 46px;
 }
-.block {
+.info {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
 }
 
-.blockTitle {
+.infoTitle {
   font-weight: 300;
   font-size: 14px;
   line-height: 130%;
   color: #cdcdcd;
   margin: 0;
 }
-.blockSubTitle {
+.infoSubTitle {
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 130%;
 }
 .social {
   display: flex;
   column-gap: 40px;
 }
 
-.goOver {
+.link {
   display: flex;
   align-items: center;
 }
 
-.goOver__title {
+.link__title {
   margin-left: 6px;
 }
