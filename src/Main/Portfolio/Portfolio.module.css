@@ -1,12 +1,7 @@
 .content {
-  overflow: hidden;
-  white-space: nowrap;
-}
-.circle {
-  position: relative;
-  margin: 0;
-  margin-bottom: 60px;
-  width: 1600px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
 }
 
 .row {
@@ -16,9 +11,4 @@
 .card {
   padding: 56px 35px;
   background: black;
-}
-
-.img {
-  height: 255px;
-  width: 402px;
 }

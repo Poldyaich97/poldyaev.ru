@@ -2,7 +2,12 @@ import styles from "./Circle.module.css";
 
 export default function Circle() {
   return (
-    <a href="/#" className={styles.circle}>
+    <a
+      href="https://career.habr.com/poldyaich97"
+      target="_blank"
+      className={styles.circle}
+      rel="noreferrer"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="36"
@@ -27,23 +32,24 @@ export default function Circle() {
           </clipPath>
         </defs>
       </svg>
-
-      <b>п</b>
-      <b>о</b>
-      <b>с</b>
-      <b>м</b>
-      <b>о</b>
-      <b>т</b>
-      <b>р</b>
-      <b>е</b>
-      <b>т</b>
-      <b>ь</b>
-      <b>р</b>
-      <b>е</b>
-      <b>з</b>
-      <b>ю</b>
-      <b>м</b>
-      <b>е</b>
+      <div className={styles.circleText}>
+        <b>п</b>
+        <b>о</b>
+        <b>с</b>
+        <b>м</b>
+        <b>о</b>
+        <b>т</b>
+        <b>р</b>
+        <b>е</b>
+        <b>т</b>
+        <b>ь</b>
+        <b>р</b>
+        <b>е</b>
+        <b>з</b>
+        <b>ю</b>
+        <b>м</b>
+        <b>е</b>
+      </div>
     </a>
   );
 }

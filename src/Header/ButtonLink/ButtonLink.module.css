@@ -9,7 +9,6 @@
   cursor: pointer;
   transition: background-color ease-in-out 0.25s;
   overflow: hidden;
-  color: white;
 }
 
 .circleLink::after {
@@ -19,6 +18,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .circleLink::before {

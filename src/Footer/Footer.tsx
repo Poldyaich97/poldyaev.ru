@@ -31,7 +31,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className={styles.footer}>
+    <footer id="footer" className={styles.footer}>
       <div className={styles.footer__slider}>
         <Slider />
       </div>
@@ -42,9 +42,9 @@ export default function Footer() {
             продукты вместе🤘
           </h2>
 
-          <div id="contacts" className={styles.contacts}>
+          <div className={styles.contacts}>
             <a
-              href="daniil@poldyaev.ru&body=Привет, хочу предложить тебе работу."
+              href="mailto:daniil@poldyaev.ru&body=Привет, хочу предложить тебе работу."
               className={styles.button}
             >
               daniil@poldyaev.ru
@@ -69,7 +69,12 @@ export default function Footer() {
               <p className={styles.infoTitle}>контакты</p>
 
               <div className={styles.social}>
-                <a className={styles.link} href="https://t.me/PoldyaevD">
+                <a
+                  className={styles.link}
+                  href="https://t.me/PoldyaevD"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="12"
@@ -87,6 +92,8 @@ export default function Footer() {
                 <a
                   className={styles.link}
                   href="https://github.com/Poldyaich97"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

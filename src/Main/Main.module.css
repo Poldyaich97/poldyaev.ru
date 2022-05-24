@@ -8,8 +8,8 @@
 }
 
 .row {
-  box-shadow: rgb(72 72 72 / 30%) 0px 0.5px 0px;
   padding: 40px 0px;
+  border-bottom: 1px solid rgb(72 72 72 / 30%);
 }
 
 .row:last-of-type {

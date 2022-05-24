@@ -17,7 +17,7 @@
 body {
   margin: 0;
   color: #ffff;
-  font-family: "NeueMachina";
+  font-family: "NeueMachina", "Menlo", "Courier New";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;

@@ -1,26 +1,22 @@
-.content {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
+.marquee {
   position: relative;
+  width: 100%;
 }
-.animation__circle {
-  animation: circle 35s linear infinite;
-  font-size: 300px;
-  line-height: 0.8;
-  color: #255af6;
+
+.marquee .inner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  color: white;
+  font-size: 8rem;
+}
+.marquee .inner > * {
+  white-space: nowrap;
+}
+
+.marquee p {
   margin: 0;
-}
-
-@keyframes circle {
-  0% {
-    transform: translateX(100%);
-  }
-
-  50% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+  font-size: 300px;
+  line-height: 160%;
+  color: #255af6;
 }

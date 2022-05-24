@@ -6,6 +6,22 @@
   align-items: center;
   justify-content: center;
 }
+.circleText {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: 24s linear 0s normal none infinite running rot;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .circle b {
   position: absolute;
   left: 50%;
