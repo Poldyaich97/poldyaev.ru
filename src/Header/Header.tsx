@@ -19,12 +19,17 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="#portfolio" className={styles.link}>
+              <a
+                href="https://career.habr.com/poldyaich97"
+                target="_blank"
+                className={styles.link}
+                rel="noreferrer"
+              >
                 Резюме
               </a>
             </li>
             <li>
-              <a href="#portfolio" className={styles.link}>
+              <a href="#footer" className={styles.link}>
                 Контакты
               </a>
             </li>
@@ -52,7 +57,7 @@ export default function Header() {
               Люблю решать сложные задачи и узнавать <br /> новое.
               Учусь создавать web приложения <br /> с помощью React и экосистемы
             </p>
-            <a className={styles.lookBelow} href="/#">
+            <a className={styles.lookBelow} href="#main">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"

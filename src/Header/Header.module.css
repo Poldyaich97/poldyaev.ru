@@ -6,7 +6,26 @@
   height: 100vh;
   min-height: 600px;
   overflow: hidden;
+  z-index: 1;
 }
+.header::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(./noise.png);
+}
+.header__slider {
+  position: absolute;
+  width: 100vw;
+  top: -120px;
+  left: 0;
+  z-index: 1;
+}
+
 .header::before {
   content: url("../Header/poldyaev.png");
   position: absolute;
@@ -16,13 +35,6 @@
   bottom: 0px;
   z-index: 2;
 }
-.header__slider {
-  position: absolute;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
 
 .header__content {
   position: relative;
@@ -31,7 +43,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  z-index: 1;
+  z-index: 3;
 }
 .navigation {
   display: flex;
