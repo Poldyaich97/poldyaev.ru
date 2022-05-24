@@ -1,14 +1,21 @@
 .content {
   display: flex;
-  flex-direction: column;
-  row-gap: 60px;
+  column-gap: 10px;
+  justify-content: space-between;
 }
 
-.row {
-  display: flex;
-  column-gap: 50px;
-}
 .card {
-  padding: 56px 35px;
+  padding: 36px 16px;
   background: black;
+}
+
+@media (max-width: 1814px) {
+  .content {
+    row-gap: 20px;
+    flex-direction: column;
+  }
+  .card {
+    text-align: center;
+    background: #1e1e1e;
+  }
 }

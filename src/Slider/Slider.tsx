@@ -22,7 +22,7 @@ export default function Slider() {
   return (
     <div className={styles.marquee}>
       <div ref={containerRef} className={styles.inner}>
-        <p ref={contentRef}>FRONTEND DEVELOPER</p>
+        <p ref={contentRef}>FRONTEND DEVELOPER</p>&nbsp;&nbsp;
         <p>FRONTEND DEVELOPER</p>
       </div>
     </div>
