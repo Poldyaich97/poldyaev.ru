@@ -1,0 +1,41 @@
+.mainStyles {
+  padding: 40px 0px 120px 0px;
+}
+
+.column {
+  padding: 50px 0px;
+  margin-bottom: 90px;
+}
+
+.row {
+  padding: 40px 0px;
+  border-bottom: 1px solid rgb(72 72 72 / 30%);
+}
+
+.row:last-of-type {
+  box-shadow: none;
+}
+
+.nameProject {
+  font-size: 70px;
+  line-height: 160%;
+  margin: 0;
+}
+.project {
+  color: black;
+  font-size: 25px;
+  line-height: 160%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link:hover {
+  color: #1e1e1e;
+  opacity: 0.3;
+}

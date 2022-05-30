@@ -1,0 +1,23 @@
+.marquee {
+  position: relative;
+  width: 100%;
+}
+
+.marquee .inner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  color: white;
+  font-size: 8rem;
+  z-index: 1;
+}
+.marquee .inner > * {
+  white-space: nowrap;
+}
+
+.marquee p {
+  margin: 0;
+  font-size: 300px;
+  line-height: 160%;
+  color: #255af6;
+}
