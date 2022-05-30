@@ -7,13 +7,13 @@ export default function Portfolio() {
   return (
     <div id="portfolio" className={styles.content}>
       <div className={styles.card}>
-        <img src={card3} alt="123" />
+        <img src={card3} alt="Airbnb" />
       </div>
       <div className={styles.card}>
-        <img src={card2} alt="123" />
+        <img src={card2} alt="Star Wars" />
       </div>
       <div className={styles.card}>
-        <img src={card} alt="123" />
+        <img src={card} alt="Portfolio" />
       </div>
     </div>
   );

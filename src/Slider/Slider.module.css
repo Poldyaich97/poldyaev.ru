@@ -9,6 +9,7 @@
   display: flex;
   color: white;
   font-size: 8rem;
+  z-index: 1;
 }
 .marquee .inner > * {
   white-space: nowrap;

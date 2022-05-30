@@ -6,7 +6,7 @@ export default function Button() {
       href="https://vk.me/poldyaevru"
       target="_blank"
       rel="noreferrer"
-      className={styles.circleLink}
+      className={styles.link}
     >
       &nbsp;
     </a>

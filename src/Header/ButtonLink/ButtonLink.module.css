@@ -1,17 +1,16 @@
-.circleLink {
+.link {
   display: block;
   width: 146px;
   height: 146px;
   border-radius: 50%;
   position: relative;
-  margin: auto;
   background: #255af6;
   cursor: pointer;
   transition: background-color ease-in-out 0.25s;
   overflow: hidden;
 }
 
-.circleLink::after {
+.link::after {
   position: absolute;
   content: "написать мне";
   top: 50%;
@@ -23,7 +22,7 @@
   font-size: 20px;
 }
 
-.circleLink::before {
+.link::before {
   position: absolute;
   content: "";
   width: 146px;
@@ -34,6 +33,6 @@
   left: 0;
   transition: top 0.4s;
 }
-.circleLink:hover::before {
+.link:hover::before {
   top: 0;
 }

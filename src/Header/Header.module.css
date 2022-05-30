@@ -11,20 +11,20 @@
 .header::after {
   content: "";
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-image: url(./noise.png);
-  opacity: 0.25;
+  opacity: 0.15;
 }
 .header__slider {
   position: absolute;
   width: 100vw;
   top: -120px;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header::before {
@@ -34,7 +34,7 @@
   line-height: 0;
   right: 0px;
   bottom: 0px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__content {
@@ -44,7 +44,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  z-index: 3;
+  z-index: 5;
 }
 .navigation {
   display: flex;
@@ -80,6 +80,7 @@ li:hover {
 .myNameIs {
   margin: 0;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .description {
   margin: 0;
@@ -102,7 +103,7 @@ li:hover {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 3;
+  z-index: 5;
 }
 
 @keyframes bounce {
