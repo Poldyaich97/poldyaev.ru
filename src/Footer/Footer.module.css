@@ -96,3 +96,9 @@
 .link__title {
   margin-left: 6px;
 }
+
+@media (max-width: 1920px) {
+  .footer {
+    display: none;
+  }
+}
