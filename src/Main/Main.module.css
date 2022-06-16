@@ -39,3 +39,9 @@
   color: #1e1e1e;
   opacity: 0.3;
 }
+
+@media (max-width: 1920px) {
+  .mainStyles {
+    display: none;
+  }
+}

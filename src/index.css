@@ -16,17 +16,12 @@
 body {
   margin: 0;
   color: #ffff;
-  font-family: "NeueMachina", "Menlo", "Courier New";
+  font-family: "NeueMachina", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: 130%;
   font-size: 14px;
-}
-
-code {
-  font-family: "NeueMachina";
-  font-weight: 400;
 }
 
 a {

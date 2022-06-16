@@ -10,6 +10,7 @@ export default function Header() {
       <div className={styles.header__slider}>
         <Slider />
       </div>
+
       <div className={containerStyles.container}>
         <div className={styles.header__content}>
           <nav className={styles.navigation}>
