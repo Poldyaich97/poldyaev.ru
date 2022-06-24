@@ -41,7 +41,15 @@
 }
 
 @media (max-width: 1920px) {
-  .mainStyles {
-    display: none;
+}
+
+@media (max-width: 991px) {
+  .link {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .nameProject {
+    font-size: 50px;
   }
 }
