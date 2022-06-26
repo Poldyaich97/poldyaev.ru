@@ -1,19 +1,19 @@
 import styles from "./Portfolio.module.css";
-import card from "./projects1.png";
-import card2 from "./projects2.png";
-import card3 from "./projects3.png";
+import card from "./airbnb.png";
+import card2 from "./starwars.png";
+import card3 from "./poldyaev.png";
 
 export default function Portfolio() {
   return (
     <div id="portfolio" className={styles.content}>
       <div className={styles.card}>
-        <img src={card3} alt="Airbnb" />
+        <img src={card3} alt="Portfolio" />
       </div>
       <div className={styles.card}>
         <img src={card2} alt="Star Wars" />
       </div>
       <div className={styles.card}>
-        <img src={card} alt="Portfolio" />
+        <img src={card} alt="airbnb" />
       </div>
     </div>
   );

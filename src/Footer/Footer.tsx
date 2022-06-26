@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "./Footer.module.css";
 import Slider from "../Slider/Slider";
 import container from "../Container/Container.module.css";
+import Time from "./Time/Time";
 
 function getClock() {
   const data = new Date();
@@ -56,16 +57,7 @@ export default function Footer() {
           <div>
             <div className={styles.line}></div>
             <div className={styles.infoWrapper}>
-              <div className={styles.timeZone}>
-                <div className={styles.info}>
-                  <p className={styles.infoTitle}>версия</p>
-                  <p className={styles.infoSubTitle}>{state.year}</p>
-                </div>
-                <div className={styles.info}>
-                  <p className={styles.infoTitle}>местное время</p>
-                  <p className={styles.infoSubTitle}>{state.time}</p>
-                </div>
-              </div>
+              <Time />
               <div className={styles.info}>
                 <p className={styles.infoTitle}>контакты</p>
 

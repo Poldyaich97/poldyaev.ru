@@ -2,13 +2,10 @@ import styles from "./Header.module.css";
 import containerStyles from "../Container/Container.module.css";
 import Slider from "../Slider/Slider";
 import Circle from "./Circle/Circle";
+import Menu from "./Menu/Menu";
 import ButtonLink from "./ButtonLink/ButtonLink";
-import { useState } from "react";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleClick = () => setIsOpen((currentOpen) => !currentOpen);
-
   return (
     <header className={styles.header}>
       <div className={styles.header__slider}>
@@ -17,51 +14,7 @@ export default function Header() {
 
       <div className={containerStyles.container}>
         <div className={styles.header__content}>
-          <div className={`${styles.menu}  ${styles.burger_menu}`}>
-            <div className={styles.burger__icon} onClick={handleClick}>
-              <span></span>
-            </div>
-            <nav
-              className={`${styles.menu__body}  ${
-                isOpen ? styles.menu__body_active : ""
-              }`}
-            >
-              <ul className={styles.menu__list}>
-                <li>
-                  <a href="#portfolio" className={styles.link}>
-                    Работы
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://career.habr.com/poldyaich97"
-                    target="_blank"
-                    className={styles.link}
-                    rel="noreferrer"
-                  >
-                    Резюме
-                  </a>
-                </li>
-                <li>
-                  <a href="#footer" className={styles.link}>
-                    Контакты
-                  </a>
-                </li>
-                <div className={styles.line} />
-                <li>
-                  <a href="mailto:daniil@poldyaev.ru" className={styles.link}>
-                    daniil@poldyaev.ru
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+79678532813" className={styles.link}>
-                    +7 967 853 28 13
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
+          <Menu />
           <div className={styles.about}>
             <div className={styles.about__circle}>
               <Circle />

@@ -14,7 +14,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(./noise.png);
+  background-image: url(../noise.png);
   opacity: 0.25;
 }
 .footer__slider {
@@ -67,10 +67,7 @@
   justify-content: space-between;
   width: 100%;
 }
-.timeZone {
-  display: flex;
-  column-gap: 46px;
-}
+
 .info {
   display: flex;
   flex-direction: column;
