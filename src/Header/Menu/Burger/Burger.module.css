@@ -36,3 +36,9 @@
   top: 50%;
   transform: scale(1) translate(0px, -50%);
 }
+
+@media (max-width: 1280px) {
+  .burger__icon {
+    display: block;
+  }
+}

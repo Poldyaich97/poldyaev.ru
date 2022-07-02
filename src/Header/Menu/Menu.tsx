@@ -1,22 +1,23 @@
 import styles from "./Menu.module.css";
+import Burger from "./Burger/Burger";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => setIsOpen((currentOpen) => !currentOpen);
 
-  if (isOpen === true) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "visible";
-  }
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [isOpen]);
 
   return (
     <div className={`${styles.burger_menu}`}>
-      <div className={styles.burger__icon} onClick={handleClick}>
-        <span></span>
-      </div>
+      <Burger onClick={handleClick} />
       <nav
         className={`${styles.menu__body}  ${
           isOpen ? styles.menu__body_active : ""

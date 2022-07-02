@@ -1,36 +1,9 @@
-import { useState, useEffect } from "react";
 import styles from "./Footer.module.css";
 import Slider from "../Slider/Slider";
 import container from "../Container/Container.module.css";
 import Time from "./Time/Time";
 
-function getClock() {
-  const data = new Date();
-  let hours = data.getHours().toString();
-  let minutes = data.getMinutes().toString();
-
-  if (hours.length < 2) hours = "0" + hours;
-  if (minutes.length < 2) minutes = "0" + minutes;
-
-  return hours + ":" + minutes;
-}
-
-function getYear() {
-  const data = new Date();
-  return data.getFullYear().toString();
-}
-
 export default function Footer() {
-  const [state, setState] = useState({ time: getClock(), year: getYear() });
-  useEffect(() => {
-    const intervalId = window.setInterval(function () {
-      setState({ time: getClock(), year: getYear() });
-    }, 1000);
-    return () => {
-      window.clearInterval(intervalId);
-    };
-  }, []);
-
   return (
     <footer id="footer" className={styles.footer}>
       <div className={styles.footer__slider}>
