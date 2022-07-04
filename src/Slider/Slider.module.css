@@ -7,7 +7,6 @@
   position: relative;
   width: 100%;
   display: flex;
-  z-index: 1;
 }
 .marquee .inner > * {
   white-space: nowrap;
@@ -16,6 +15,17 @@
 .marquee p {
   margin: 0px;
   font-size: 300px;
-  line-height: 160%;
+  line-height: 70%;
   color: #255af6;
+}
+@media (max-width: 1280px) {
+  .marquee p {
+    font-size: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee p {
+    font-size: 100px;
+  }
 }

@@ -6,7 +6,6 @@
   height: 100vh;
   min-height: 600px;
   overflow: hidden;
-  z-index: 1;
 }
 .header::after {
   content: "";
@@ -16,27 +15,28 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(./noise.png);
+  background-image: url(../noise.png);
   opacity: 0.15;
 }
 .header__slider {
   position: absolute;
   width: 100vw;
-  top: -120px;
+  top: 0px;
   left: 0;
   z-index: 2;
 }
-.header__slider:nth-child(2) {
-  top: 120px;
-}
 
 .header::before {
-  content: url("../Header/poldyaev.png");
+  content: "";
   position: absolute;
-  display: block;
-  line-height: 0;
+  background: url("../Header/poldyaev.png");
   right: 0px;
   bottom: 0px;
+  width: 620px;
+  height: 720px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  display: block;
   z-index: 3;
 }
 
@@ -45,32 +45,18 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
   z-index: 5;
 }
-.navigation {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  column-gap: 40px;
-}
-.link {
-  font-size: 16px;
-  color: #fff;
-  text-decoration: none;
-}
-li:hover {
-  animation: bounce 1s;
-}
-.line {
-  width: 100px;
-  height: 1px;
-  background: #fff;
+.test {
+  position: relative;
+  z-index: 6;
 }
 
 .about {
   position: relative;
+  margin-bottom: 80px;
 }
 .about p {
   font-size: 18px;
@@ -94,7 +80,12 @@ li:hover {
   display: flex;
   align-items: center;
   font-size: 16px;
+  position: relative;
+  bottom: 40px;
+  left: 0px;
+  z-index: 5;
 }
+
 .lookBelow__title {
   margin-left: 12px;
 }
@@ -109,19 +100,6 @@ li:hover {
   z-index: 5;
 }
 
-@keyframes bounce {
-  0%,
-  20%,
-  100% {
-    transform: translateY(0);
-    transform: translateY(0);
-  }
-  70% {
-    transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-
 @keyframes down {
   0%,
   20%,
@@ -132,5 +110,55 @@ li:hover {
   70% {
     transform: translateY(15px);
     transform: translateY(15px);
+  }
+}
+
+@media (max-width: 1280px) {
+  .line {
+    margin-bottom: 20px;
+  }
+
+  .writeToMe {
+    display: none;
+  }
+  .lookBelow {
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header::before {
+    background-size: 80%;
+  }
+}
+@media (max-width: 991px) {
+  .header::before {
+    background-size: 70%;
+  }
+  .about__circle {
+    right: 200px;
+    top: 210px;
+  }
+  .description {
+    margin-bottom: 240px;
+  }
+}
+
+@media (max-width: 767px) {
+  .description {
+    margin-bottom: 290px;
+  }
+  .header::before {
+    background-size: 60%;
+  }
+}
+@media (max-width: 480px) {
+  .header__slider {
+    top: 10px;
+  }
+}
+@media (max-width: 390px) {
+  .header::before {
+    background-size: 60%;
   }
 }
