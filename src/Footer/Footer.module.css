@@ -96,6 +96,10 @@
 .link__title {
   margin-left: 6px;
 }
+.dataZone {
+  display: flex;
+  column-gap: 46px;
+}
 
 @media (max-width: 991px) {
   .title {
@@ -117,7 +121,7 @@
   .footer__slider {
     margin-top: 300px;
   }
-  .timeZone {
+  .dataZone {
     display: none;
   }
   .infoWrapper {

@@ -2,6 +2,7 @@ import styles from "./Footer.module.css";
 import Slider from "../Slider/Slider";
 import container from "../Container/Container.module.css";
 import Time from "./Time/Time";
+import Year from "./Year/Year";
 
 export default function Footer() {
   return (
@@ -30,7 +31,11 @@ export default function Footer() {
           <div>
             <div className={styles.line}></div>
             <div className={styles.infoWrapper}>
-              <Time />
+              <div className={styles.dataZone}>
+                <Year />
+                <Time />
+              </div>
+
               <div className={styles.info}>
                 <p className={styles.infoTitle}>контакты</p>
 

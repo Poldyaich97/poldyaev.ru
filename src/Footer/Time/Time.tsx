@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Time.module.css";
+import Year from "../Year/Year";
 
 function getClock() {
   const data = new Date();
@@ -26,15 +27,9 @@ export default function Time() {
     };
   }, []);
   return (
-    <div className={styles.timeZone}>
-      <div className={styles.info}>
-        <p className={styles.infoTitle}>версия</p>
-        <p className={styles.infoSubTitle}>{state.year}</p>
-      </div>
-      <div className={styles.info}>
-        <p className={styles.infoTitle}>местное время</p>
-        <p className={styles.infoSubTitle}>{state.time}</p>
-      </div>
+    <div className={styles.info}>
+      <p className={styles.infoTitle}>местное время</p>
+      <p className={styles.infoSubTitle}>{state.time}</p>
     </div>
   );
 }

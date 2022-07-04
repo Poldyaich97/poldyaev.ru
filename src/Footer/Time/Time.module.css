@@ -1,7 +1,3 @@
-.timeZone {
-  display: flex;
-  column-gap: 46px;
-}
 .info {
   display: flex;
   flex-direction: column;
@@ -51,9 +47,7 @@
   .footer__slider {
     margin-top: 300px;
   }
-  .timeZone {
-    display: none;
-  }
+
   .infoWrapper {
     justify-content: center;
   }
