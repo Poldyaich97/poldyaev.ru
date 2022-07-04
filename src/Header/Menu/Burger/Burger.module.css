@@ -1,8 +1,4 @@
-.burger__icon {
-  display: none;
-}
-
-.burger__icon {
+.burger {
   z-index: 7;
   display: none;
   position: fixed;
@@ -11,9 +7,9 @@
   height: 18px;
   cursor: pointer;
 }
-.burger__icon span,
-.burger__icon::before,
-.burger__icon::after {
+.burger span,
+.burger::before,
+.burger::after {
   left: 0;
   position: absolute;
   height: 10%;
@@ -21,24 +17,24 @@
   transition: all 0.3s ease 0s;
   background-color: #b9b9b9;
 }
-.burger__icon::before,
-.burger__icon::after {
+.burger::before,
+.burger::after {
   content: "";
 }
-.burger__icon::before {
+.burger::before {
   top: 0;
 }
 
-.burger__icon::after {
+.burger::after {
   bottom: 0;
 }
-.burger__icon span {
+.burger span {
   top: 50%;
   transform: scale(1) translate(0px, -50%);
 }
 
 @media (max-width: 1280px) {
-  .burger__icon {
+  .burger {
     display: block;
   }
 }

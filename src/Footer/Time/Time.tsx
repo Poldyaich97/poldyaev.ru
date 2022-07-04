@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import styles from "./Time.module.css";
-import Year from "../Year/Year";
 
 function getClock() {
   const data = new Date();
@@ -12,15 +11,11 @@ function getClock() {
 
   return hours + ":" + minutes;
 }
-function getYear() {
-  const data = new Date();
-  return data.getFullYear().toString();
-}
 export default function Time() {
-  const [state, setState] = useState({ time: getClock(), year: getYear() });
+  const [state, setState] = useState({ time: getClock() });
   useEffect(() => {
     const intervalId = window.setInterval(function () {
-      setState({ time: getClock(), year: getYear() });
+      setState({ time: getClock() });
     }, 1000);
     return () => {
       window.clearInterval(intervalId);

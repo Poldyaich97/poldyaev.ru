@@ -32,8 +32,9 @@
   background: url("../Header/poldyaev.png");
   right: 0px;
   bottom: 0px;
-  width: 620px;
-  height: 720px;
+  width: 714px;
+  height: 770px;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
   display: block;
@@ -49,7 +50,13 @@
   align-items: flex-start;
   z-index: 5;
 }
-.test {
+.wrapperContentContainer {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.wrapperMenu {
   position: relative;
   z-index: 6;
 }
@@ -73,15 +80,12 @@
 }
 .description {
   margin: 0;
-  margin-bottom: 80px;
   width: auto;
 }
 .lookBelow {
   display: flex;
   align-items: center;
   font-size: 16px;
-  position: relative;
-  bottom: 40px;
   left: 0px;
   z-index: 5;
 }
@@ -113,7 +117,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .line {
     margin-bottom: 20px;
   }
@@ -124,16 +128,20 @@
   .lookBelow {
     bottom: 0px;
   }
-}
-
-@media (max-width: 1199px) {
   .header::before {
-    background-size: 80%;
+    width: 620px;
+    height: 632px;
   }
 }
+
 @media (max-width: 991px) {
   .header::before {
-    background-size: 70%;
+    width: 434px;
+    height: 504px;
+  }
+
+  .header__content {
+    justify-content: flex-end;
   }
   .about__circle {
     right: 200px;
@@ -149,16 +157,18 @@
     margin-bottom: 290px;
   }
   .header::before {
-    background-size: 60%;
+    width: 372px;
+    height: 432px;
   }
 }
 @media (max-width: 480px) {
   .header__slider {
     top: 10px;
   }
-}
-@media (max-width: 390px) {
-  .header::before {
-    background-size: 60%;
+  .header__content {
+    justify-content: space-between;
+  }
+  .about {
+    margin: 0;
   }
 }
