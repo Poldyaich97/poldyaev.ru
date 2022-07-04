@@ -26,14 +26,12 @@ li:hover {
   20%,
   100% {
     transform: translateY(0);
-    transform: translateY(0);
   }
   70% {
     transform: translateY(-15px);
-    transform: translateY(-15px);
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .line {
     margin-bottom: 20px;
   }
@@ -49,12 +47,12 @@ li:hover {
     background-color: #1e1e1eda;
     padding: 200px 0px;
     transition: all 0.3s ease 0s;
-    transform: translate(-100%, 0);
+    transform: translateX(-100%);
     overflow: auto;
   }
 
   .menu__body_active {
-    transform: translate(0, 0);
+    transform: translateX(0);
   }
   .menu__list {
     flex-direction: column;
@@ -71,42 +69,5 @@ li:hover {
   }
   .writeToMe {
     display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  .header::before {
-    background-size: 80%;
-  }
-}
-@media (max-width: 991px) {
-  .header::before {
-    background-size: 70%;
-  }
-  .about__circle {
-    right: 200px;
-    top: 210px;
-  }
-  .description {
-    margin-bottom: 240px;
-  }
-}
-
-@media (max-width: 767px) {
-  .description {
-    margin-bottom: 290px;
-  }
-  .header::before {
-    background-size: 60%;
-  }
-}
-@media (max-width: 480px) {
-  .header__slider {
-    top: -34px;
-  }
-}
-@media (max-width: 390px) {
-  .header::before {
-    background-size: 60%;
   }
 }
