@@ -21,7 +21,7 @@
 .header__slider {
   position: absolute;
   width: 100vw;
-  top: 0px;
+  top: 50px;
   left: 0;
   z-index: 2;
 }
@@ -116,6 +116,22 @@
     transform: translateY(15px);
   }
 }
+
+@media (max-height: 780px) {
+  .header::before {
+    background-size: 80%;
+  
+  }
+  
+}
+@media (max-height: 640px) {
+  .header::before {
+    background-size: 75%;
+  
+  }
+  
+}
+
 
 @media (max-width: 1200px) {
   .line {

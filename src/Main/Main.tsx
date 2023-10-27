@@ -40,6 +40,17 @@ export default function Header() {
               <p className={styles.project}>Html/CSS/Js</p>
             </a>
           </div>
+          <div className={styles.row}>
+            <a
+              href="https://github.com/Poldyaich97/admtalk"
+              className={styles.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className={styles.nameProject}>admtalk</p>
+              <p className={styles.project}>CRA + TS</p>
+            </a>
+          </div>
         </div>
         <Portfolio />
       </div>
