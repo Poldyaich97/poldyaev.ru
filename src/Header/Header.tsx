@@ -23,7 +23,7 @@ export default function Header() {
                 <Circle />
               </div>
               <p className={styles.myNameIs}>
-                Меня зовут Данил Польдяев,
+                Меня зовут Даниил Польдяев,
                 <br />я – начинающий frontend разработчик
               </p>
               <p className={styles.description}>
