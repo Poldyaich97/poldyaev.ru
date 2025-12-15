@@ -1,5 +1,8 @@
 .link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 146px;
   height: 146px;
   border-radius: 50%;
@@ -8,18 +11,10 @@
   cursor: pointer;
   transition: background-color ease-in-out 0.25s;
   overflow: hidden;
-}
-
-.link::after {
-  position: absolute;
-  content: "написать мне";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 500;
+  gap: 4px;
 }
 
 .link::before {
@@ -35,4 +30,20 @@
 }
 .link:hover::before {
   top: 0;
+}
+
+.linkText {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+}
+
+.linkSub {
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
 }

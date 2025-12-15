@@ -3,3 +3,15 @@
   margin: 0px auto;
   height: 100%;
 }
+
+@media (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 92%;
+  }
+}

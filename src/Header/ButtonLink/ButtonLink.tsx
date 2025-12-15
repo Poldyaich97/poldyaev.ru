@@ -7,8 +7,10 @@ export default function Button() {
       target="_blank"
       rel="noreferrer"
       className={styles.link}
+      aria-label="Написать мне в Telegram"
     >
-      &nbsp;
+      <span className={styles.linkText}>Написать</span>
+      <span className={styles.linkSub}>в Telegram</span>
     </a>
   );
 }

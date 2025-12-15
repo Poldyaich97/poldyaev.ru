@@ -32,7 +32,11 @@ export default function Header() {
                 и экосистемы
               </p>
             </div>
-            <a className={styles.lookBelow} href="#main">
+            <a
+              className={styles.lookBelow}
+              href="#main"
+              aria-label="Перейти к проектам"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
