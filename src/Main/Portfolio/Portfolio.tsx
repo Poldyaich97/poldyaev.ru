@@ -2,8 +2,28 @@ import styles from "./Portfolio.module.css";
 import card from "./airbnb.png";
 import card2 from "./starwars.png";
 import card3 from "./poldyaev.png";
+import businessCard from "./bussiness-card.png";
+import fgso66 from "./fgso66.png";
 
 const projects = [
+  {
+    title: "Бизнес-визитка",
+    description:
+      "Цифровая визитка с контактами, QR и быстрой загрузкой в телефон.",
+    image: businessCard,
+    alt: "Скриншот цифровой визитки",
+    link: "https://business-card.skbkontur.ru/user/421c9a52-8b2d-42a0-bf8e-924a3b7077d9",
+    stack: "React + TypeScript",
+  },
+  {
+    title: "Федерация гандбола СО",
+    description:
+      "Промо-сайт федерации: новости, разделы о соревнованиях и контакты.",
+    image: fgso66,
+    alt: "Скриншот сайта федерации гандбола Свердловской области",
+    link: "https://fgso66.ru/",
+    stack: "HTML/CSS/JS",
+  },
   {
     title: "Портфолио",
     description: "Лендинг с эффектами и анимацией, адаптив под мобильные.",
@@ -14,7 +34,8 @@ const projects = [
   },
   {
     title: "Star Wars",
-    description: "Canvas-игра: анимация, столкновения, управление с клавиатуры.",
+    description:
+      "Canvas-игра: анимация, столкновения, управление с клавиатуры.",
     image: card2,
     alt: "Скриншот игры Star Wars",
     link: "https://github.com/Poldyaich97/StarWars",

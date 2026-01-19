@@ -4,6 +4,20 @@ import Portfolio from "./Portfolio/Portfolio";
 
 const repositories = [
   {
+    name: "business-card",
+    tech: "React, TypeScript",
+    link:
+      "https://business-card.skbkontur.ru/user/421c9a52-8b2d-42a0-bf8e-924a3b7077d9",
+    description:
+      "Цифровая визитка с контактами, QR и быстрой загрузкой в телефон.",
+  },
+  {
+    name: "fgso66",
+    tech: "HTML/CSS/JS",
+    link: "https://fgso66.ru/",
+    description: "Промо-сайт федерации гандбола с новостями и разделами.",
+  },
+  {
     name: "airbnb",
     tech: "React, TypeScript",
     link: "https://github.com/Poldyaich97/airbnb",
