@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Yandex verification
+/public/yandex_d08b31c4a2658930.html
